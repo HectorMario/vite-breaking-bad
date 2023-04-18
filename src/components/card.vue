@@ -4,10 +4,6 @@ export default {
         item: Object
     }
 }
-
-
-
-
 </script>
 
 <template>
@@ -24,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
     .ms-height{
-        height: 400px;
+        height: 100%;
         background-color: #D48F38;
         h5{
             color: #fff;
