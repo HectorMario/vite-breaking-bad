@@ -2,13 +2,16 @@
 import card from './card.vue'
 import {store} from '../store';
 
-
+const values = ['Alien', 'Ally of Justice', 'Ancient Gear']
 
 </script>
 
 <template>
     <div class="container-fluid ms-color-orange">
-        <button></button>
+        <select name="" id="" v-model="store.filter" @change="$emit('filter')">
+            <option value="">all</option>
+            <option :value="filter" v-for="filter in values">{{filter}}</option>
+        </select>
         <div class="container ms-color-white p-5">
             <div class="contatore d-flex align-items-center">
                 <h3>FOUND {{ store.number.meta.current_rows }} CARDS</h3>

@@ -10,7 +10,7 @@ export default {
     <div class="col mb-4" v-for="(items, index) in item">
         <div class="card ms-height ">
             <img :src="items.card_images[0].image_url_small" alt="">
-            <div class="card-body text-center">
+            <div class="card-body text-center ">
                 <h5 class="card-title">{{ items.name}}</h5>
                 <p class="card-text"> {{ items.type }}</p>
             </div>
@@ -24,6 +24,9 @@ export default {
         background-color: #D48F38;
         h5{
             color: #fff;
+        }
+        .card-text{
+            vertical-align: baseline;
         }
     }
 </style>
